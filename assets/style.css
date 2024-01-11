@@ -57,3 +57,37 @@ section > h2 {
 .icons img {
   height: 30px;
 }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+.card {
+  box-shadow: 4px 3px 15px 2px #0000007a;
+  min-height: 500px;
+  width: 100%;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card .preview {
+  aspect-ratio: 1.2/1;
+}
+
+.card .preview > img {
+  object-fit: cover;
+}
+
+.card > div:nth-child(2) {
+  padding: 10px;
+}
+
+.card .heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
