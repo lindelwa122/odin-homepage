@@ -33,3 +33,27 @@ img {
   padding-left: 10px; 
   position: absolute;
 }
+
+section {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+section#about-section {
+  line-height: 30px;
+}
+
+section > h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icons img {
+  height: 30px;
+}
