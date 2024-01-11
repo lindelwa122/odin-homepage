@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#hero-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.img-container {
+  aspect-ratio: 1/1.5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80vw;
+}
+
+img {
+  height: 100%; 
+  object-fit: cover;
+  width: 100%;
+}
+
+.author-name {
+  bottom: 10px;
+  color: #fff;
+  font-size: 3.5rem;
+  padding-left: 10px; 
+  position: absolute;
+}
