@@ -43,6 +43,10 @@ section#about-section {
   line-height: 30px;
 }
 
+section#about-section > .img-container {
+  display: none;
+}
+
 section > h2 {
   text-align: center;
   margin-top: 0;
@@ -141,4 +145,54 @@ footer a {
 
 .contact-details {
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+
+  #hero-section {
+    display: none;
+  }
+
+  #about-section {
+    padding: 150px 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* #about-section > div:first-child {
+    margin: 10px;
+  } */
+
+  section#about-section > div > div:nth-child(2) {
+    box-shadow: 4px 3px 15px 2px #0000007a;
+    padding: 10px;
+    width: 80vw;
+  }
+
+  section#about-section > div > div:nth-child(2) > * {
+    /* transform: translate(-20px, 0); */
+    /* padding-left: calc(43vw - 50px + 10px); */
+  }
+
+  section#about-section .img-container {
+    display: block;
+    aspect-ratio: 1/1.05;
+    width: 43vw;
+    margin: 0 5px 0px 0;
+    float: left;
+    transform: translate(-50px, -90px);
+    /* position: absolute; */
+  }
+
+  .author-name {
+    top: 30px;
+    width: 100vw;
+    color: #000;
+    bottom: unset;
+    left: calc(43vw - 100px);
+  }
 }
