@@ -69,7 +69,7 @@ section > h2 {
 }
 
 .card {
-  box-shadow: 4px 3px 15px 2px #0000007a;
+  box-shadow: 1px 1px 5px 2px #00000047;
   min-height: 500px;
   width: 100%;
 }
@@ -172,7 +172,7 @@ footer a {
   } */
 
   section#about-section > div > div:last-child {
-    box-shadow: 4px 3px 15px 2px #0000007a;
+    box-shadow: 1px 1px 5px 2px #00000047;
     padding: 20px;
     width: 80vw;
   }
@@ -193,7 +193,7 @@ footer a {
   }
 
   section#about-section .img-container > img {
-    box-shadow: 2px 2px 10px 2px #0000007a;
+    box-shadow: 2px 2px 4px 0px #00000096;
   }
 
   .author-name {
@@ -237,4 +237,73 @@ footer a {
     margin: 0 15px 15px 0;
   }
 
+  section#about-section .icons {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .layout {
+    display: none;
+  }
+
+  .author-name {
+    top: unset;
+    bottom: 40px;
+    left: 10px;
+  }
+
+  section#about-section .img-container {
+    transform: translate(0);
+    position: static;
+  }
+
+  section#about-section > div {
+    display: flex;
+    align-items: center;
+  }
+
+  section#about-section > div > div:last-child {
+    /* align-self: flex-start; */
+    width: 60%;
+    z-index: 999;
+    padding: 30px;
+  }
+
+  section#about-section .img-container {
+    width: 40%;
+    aspect-ratio: 1/1;
+    margin: 0;
+  }
+
+  section#about-section h2 {
+    margin-top: 0;
+  }
+
+  section#about-section .icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer,
+  section {
+    padding: 50px 80px !important;
+  }
+
+  .projects > .card {
+    width: 30%;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  footer .img-container {
+    width: 35%;
+    aspect-ratio: 1/1.2;
+  }
 }
