@@ -208,4 +208,8 @@ footer a {
   section {
     padding: 50px;
   }
+
+  section#my-work > h2 {
+    text-align: left;
+  }
 }
