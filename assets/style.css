@@ -180,11 +180,6 @@ footer a {
     background-color: #fff;
   }
 
-  section#about-section > div > div:last-child > * {
-    /* transform: translate(-20px, 0); */
-    /* padding-left: calc(43vw - 50px + 10px); */
-  }
-
   section#about-section .img-container {
     display: block;
     aspect-ratio: 1/1.05;
@@ -207,7 +202,6 @@ footer a {
   }
 
   .projects {
-    /* column-gap: 50px; */
     justify-content: space-between;
   }
 
@@ -270,7 +264,6 @@ footer a {
   }
 
   section#about-section > div > div:last-child {
-    /* align-self: flex-start; */
     width: 60%;
     z-index: 999;
     padding: 30px;
