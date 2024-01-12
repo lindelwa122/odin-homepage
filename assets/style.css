@@ -198,7 +198,7 @@ footer a {
 
   .author-name {
     top: 30px;
-    width: 100vw;
+    width: max-content;
     color: #000;
     bottom: unset;
     left: calc(43vw - 100px);
