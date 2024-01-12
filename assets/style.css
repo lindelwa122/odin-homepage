@@ -302,7 +302,7 @@ footer a {
   }
 
   footer .img-container {
-    width: 35%;
-    aspect-ratio: 1/1.2;
+    width: 55%;
+    aspect-ratio: 1.5/1;
   }
 }
