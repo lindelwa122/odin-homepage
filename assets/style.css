@@ -1,3 +1,11 @@
+:root {
+  --bg-c: #fff;
+  --text-c: #212529;
+  --footer-text-c: #fafafa;
+  --box-shadow-c: #00000047;
+  --slanted-bg-c: #0483dd;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +17,7 @@ body {
 #hero-section {
   display: flex;
   justify-content: center;
-  background: linear-gradient(145deg, #0096ff 60%, #fff 40%);
+  background: linear-gradient(145deg, var(--slanted-bg-c) 60%, var(--bg-c) 40%);
   padding: 30px 0;
 }
 
@@ -29,7 +37,7 @@ img {
 
 .author-name {
   bottom: 10px;
-  color: #fff;
+  color: var(--bg-c);
   font-size: 3.5rem;
   padding-left: 10px; 
   position: absolute;
@@ -70,7 +78,7 @@ section > h2 {
 }
 
 .card {
-  box-shadow: 1px 1px 5px 2px #00000047;
+  box-shadow: 1px 1px 5px 2px var(--box-shadow-c);
   min-height: 500px;
   width: 100%;
 }
@@ -98,8 +106,8 @@ section > h2 {
 }
 
 footer {
-  background-color: #00f;
-  color: #fff;
+  background-color: var(--slanted-bg-c);
+  color: var(--footer-text-c);
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -166,18 +174,14 @@ footer a {
     display: flex;
     justify-content: center;
     position: relative;
-    background: linear-gradient(165deg, #0483dd 60%, #fff 40%);
+    background: linear-gradient(165deg, var(--slanted-bg-c) 60%, var(--bg-c) 40%);
   }
 
-  /* #about-section > div:first-child {
-    margin: 10px;
-  } */
-
   section#about-section > div > div:last-child {
-    box-shadow: 1px 1px 5px 2px #00000047;
+    box-shadow: 1px 1px 5px 2px var(--box-shadow-c);
     padding: 20px;
     width: 80vw;
-    background-color: #fff;
+    background-color: var(--bg-c);
   }
 
   section#about-section .img-container {
@@ -191,7 +195,7 @@ footer a {
   }
 
   section#about-section .img-container > img {
-    box-shadow: 2px 2px 4px 0px #00000096;
+    box-shadow: 2px 2px 4px 0px var(--box-shadow-c);
   }
 
   .author-name {
