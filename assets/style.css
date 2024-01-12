@@ -43,7 +43,7 @@ section#about-section {
   line-height: 30px;
 }
 
-section#about-section > .img-container {
+section#about-section .img-container {
   display: none;
 }
 
@@ -194,5 +194,18 @@ footer a {
     color: #000;
     bottom: unset;
     left: calc(43vw - 100px);
+  }
+
+  .projects {
+    /* column-gap: 50px; */
+    justify-content: space-between;
+  }
+
+  .projects > .card {
+    width: 47%;
+  }
+
+  section {
+    padding: 50px;
   }
 }
