@@ -2,21 +2,112 @@
 
 :root {
   --bg-c: #fff;
-  --text-c: #212529;
-  --footer-text-c: #fafafa;
   --box-shadow-c: #00000047;
+  --footer-text-c: #fafafa;
   --slanted-bg-c: #0483dd;
+  --text-c: #212529;
 }
 
 * {
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.author-name {
+  bottom: 10px;
+  color: var(--bg-c);
+  font-size: 3.5rem;
+  padding-left: 10px; 
+  position: absolute;
+}
+
 body {
-  min-width: 228px;
-  max-width: 1500px;
-  margin: 0;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  max-width: 1500px;
+  min-width: 228px;
+}
+
+.card {
+  box-shadow: 1px 1px 5px 2px var(--box-shadow-c);
+  min-height: 500px;
+  width: 100%;
+}
+
+.card > div:nth-child(2) {
+  padding: 10px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card .heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .preview {
+  aspect-ratio: 1.2/1;
+}
+
+.card .preview > img {
+  object-fit: cover;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-details img {
+  filter: invert(100%);
+}
+
+.details > p:first-child {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: var(--slanted-bg-c);
+  color: var(--footer-text-c);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+footer a {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+footer > div:first-child {
+  padding: 20px;
+}
+
+footer h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+footer img[src$=".svg"] {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+footer > .img-container {
+  width: 100vw;
 }
 
 h1 {
@@ -31,10 +122,26 @@ h3 {
 }
 
 #hero-section {
+  background: linear-gradient(145deg, var(--slanted-bg-c) 60%, var(--bg-c) 40%);
   display: flex;
   justify-content: center;
-  background: linear-gradient(145deg, var(--slanted-bg-c) 60%, var(--bg-c) 40%);
   padding: 30px 0;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.icons img {
+  height: 1.5em;
+}
+
+img {
+  height: 100%; 
+  object-fit: cover;
+  width: 100%;
 }
 
 .img-container {
@@ -45,23 +152,15 @@ h3 {
   width: 80vw;
 }
 
-img {
-  height: 100%; 
-  object-fit: cover;
-  width: 100%;
-}
-
-.author-name {
-  bottom: 10px;
-  color: var(--bg-c);
-  font-size: 3.5rem;
-  padding-left: 10px; 
-  position: absolute;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
 }
 
 section {
-  padding: 20px;
   font-size: 1.2rem;
+  padding: 20px;
 }
 
 section#about-section {
@@ -73,107 +172,8 @@ section#about-section .img-container {
 }
 
 section > h2 {
-  text-align: center;
   margin-top: 0;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.icons img {
-  height: 1.5em;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 50px;
-}
-
-.card {
-  box-shadow: 1px 1px 5px 2px var(--box-shadow-c);
-  min-height: 500px;
-  width: 100%;
-}
-
-.card h3 {
-  margin: 0;
-}
-
-.card .preview {
-  aspect-ratio: 1.2/1;
-}
-
-.card .preview > img {
-  object-fit: cover;
-}
-
-.card > div:nth-child(2) {
-  padding: 10px;
-}
-
-.card .heading {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer {
-  background-color: var(--slanted-bg-c);
-  color: var(--footer-text-c);
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-top: 100px;
-}
-
-footer > div:first-child {
-  padding: 20px;
-}
-
-footer h2 {
   text-align: center;
-  margin-top: 0;
-}
-
-.details > p:first-child {
-  font-size: 1.5rem;
-}
-
-footer > .img-container {
-  width: 100vw;
-}
-
-footer img[src$=".svg"] {
-  height: 1.5em;
-  width: 1.5em;
-}
-
-.contact-details img {
-  filter: invert(100%);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-footer a {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.contact-details {
-  margin-bottom: 20px;
 }
 
 @media (max-width: 340px) {
@@ -181,77 +181,21 @@ footer a {
     font-size: 10px;
   }
 
-  section#about-section {
-    line-height: normal;
-  }
-
   .card {
     min-height: 300px;
   }
 
-  .address-details > img,
-  .icons > img {
-    width: 20px;
-    height: 20px;
+  section#about-section {
+    line-height: normal;
   }
 }
 
 @media (min-width: 768px) {
-  #hero-section {
-    display: none;
-  }
-
-  #about-section {
-    padding: 150px 80px 50px 80px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background: linear-gradient(165deg, var(--slanted-bg-c) 60%, var(--bg-c) 40%);
-  }
-
-  section#about-section > div > div:last-child {
-    box-shadow: 1px 1px 5px 2px var(--box-shadow-c);
-    padding: 20px;
-    width: 80vw;
-    background-color: var(--bg-c);
-  }
-
-  section#about-section .img-container {
-    display: block;
-    aspect-ratio: 1/1.05;
-    width: 43vw;
-    margin: 0 5px 0px 0;
-    float: left;
-    transform: translate(-50px, -90px);
-    position: absolute;
-  }
-
-  section#about-section .img-container > img {
-    box-shadow: 2px 2px 4px 0px var(--box-shadow-c);
-  }
-
   .author-name {
-    top: 30px;
-    width: max-content;
     bottom: unset;
     left: calc(43vw - 100px);
-  }
-
-  .projects {
-    justify-content: space-between;
-  }
-
-  .projects > .card {
-    width: 47%;
-  }
-
-  footer,
-  section {
-    padding: 50px;
-  }
-
-  section#my-work > h2 {
-    text-align: left;
+    top: 30px;
+    width: max-content;
   }
 
   footer {
@@ -262,15 +206,65 @@ footer a {
     width: 75vw;
   }
 
+  footer,
+  section {
+    padding: 50px;
+  }
+
+  #hero-section {
+    display: none;
+  }
+
   .layout {
-    width: calc(43vw - 50px);
-    height: calc((43vw * 1.05) - 90px);
     float: left;
+    height: calc((43vw * 1.05) - 90px);
     margin: 0 15px 15px 0;
+    width: calc(43vw - 50px);
+  }
+
+  .projects {
+    justify-content: space-between;
+  }
+
+  .projects > .card {
+    width: 47%;
+  }
+
+  section#about-section {
+    background: linear-gradient(165deg, var(--slanted-bg-c) 60%, var(--bg-c) 40%);
+    display: flex;
+    justify-content: center;
+    padding: 150px 80px 50px 80px;
+    position: relative;
+  }
+
+  section#about-section > div > div:last-child {
+    background-color: var(--bg-c);
+    box-shadow: 1px 1px 5px 2px var(--box-shadow-c);
+    padding: 20px;
+    width: 80vw;
   }
 
   section#about-section .icons {
     display: none;
+  }
+
+  section#about-section .img-container {
+    aspect-ratio: 1/1.05;
+    display: block;
+    float: left;
+    margin: 0 5px 0px 0;
+    position: absolute;
+    transform: translate(-50px, -90px);
+    width: 43vw;
+  }
+
+  section#about-section .img-container > img {
+    box-shadow: 2px 2px 4px 0px var(--box-shadow-c);
+  }
+
+  section#my-work > h2 {
+    text-align: left;
   }
 }
 
@@ -279,36 +273,43 @@ footer a {
     font-size: 16px;
   }
 
+  .author-name {
+    bottom: 40px;
+    left: 10px;
+    top: unset;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  footer .img-container {
+    aspect-ratio: 1.5/1;
+    width: 55%;
+  }
+
+  footer,
+  section {
+    padding: 50px 80px !important;
+  }
+
   .layout {
     display: none;
   }
 
-  .author-name {
-    top: unset;
-    bottom: 40px;
-    left: 10px;
-  }
-
-  section#about-section .img-container {
-    transform: translate(0);
-    position: static;
+  .projects > .card {
+    width: 30%;
   }
 
   section#about-section > div {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 
   section#about-section > div > div:last-child {
+    padding: 30px;
     width: 60%;
     z-index: 999;
-    padding: 30px;
-  }
-
-  section#about-section .img-container {
-    width: 40%;
-    aspect-ratio: 1/1;
-    margin: 0;
   }
 
   section#about-section h2 {
@@ -320,22 +321,12 @@ footer a {
     justify-content: flex-end;
   }
 
-  footer,
-  section {
-    padding: 50px 80px !important;
-  }
-
-  .projects > .card {
-    width: 30%;
-  }
-
-  footer {
-    align-items: center;
-  }
-
-  footer .img-container {
-    width: 55%;
-    aspect-ratio: 1.5/1;
+  section#about-section .img-container {
+    aspect-ratio: 1/1;
+    margin: 0;
+    position: static;
+    transform: translate(0);
+    width: 40%;
   }
 }
 
