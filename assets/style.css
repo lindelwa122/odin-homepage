@@ -13,6 +13,8 @@
 }
 
 body {
+  min-width: 228px;
+  max-width: 1500px;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -334,5 +336,12 @@ footer a {
   footer .img-container {
     width: 55%;
     aspect-ratio: 1.5/1;
+  }
+}
+
+@media (min-width: 1500px) {
+  html {
+    display: flex;
+    justify-content: center;
   }
 }
