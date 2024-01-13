@@ -9,7 +9,7 @@ This is a final HTML/CSS project. The purpose of this project was to create a re
 
 ## Preview
 
-[Live Preview](https://lindelwa.github.io/odin-homepage)
+[Live Preview](https://lindelwa122.github.io/odin-homepage)
 
 ## Credits
 
