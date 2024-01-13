@@ -30,6 +30,7 @@ a:hover {
 }
 
 body {
+  color: var(--text-c);
   font-family: 'Roboto', sans-serif;
   margin: 0;
   max-width: 1500px;
