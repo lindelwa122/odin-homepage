@@ -82,7 +82,7 @@ section > h2 {
 }
 
 .icons img {
-  height: 30px;
+  height: 1.5em;
 }
 
 .projects {
@@ -147,8 +147,8 @@ footer > .img-container {
 }
 
 footer img[src$=".svg"] {
-  height: 30px;
-  width: 30px;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .contact-details img {
@@ -172,6 +172,26 @@ footer a {
 
 .contact-details {
   margin-bottom: 20px;
+}
+
+@media (max-width: 340px) {
+  :root {
+    font-size: 10px;
+  }
+
+  section#about-section {
+    line-height: normal;
+  }
+
+  .card {
+    min-height: 300px;
+  }
+
+  .address-details > img,
+  .icons > img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (min-width: 768px) {
