@@ -1,7 +1,7 @@
 # Homepage
 
 
-<div style="display: flex; justify-content: center; margin-bottom: 10px;">
+<div align="center">
     <img src="./assets/images/homepage-preview.png" alt="Homepage" >
 </div>
 
